@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Link to bootstrap in node modules-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+   <!--Small amount of inline styling-->
+   <style> 
+        body{
+            background-color: rgb(1, 51, 105);
+        }
+        #grid {
+            border-style: solid;
+            border-color: black;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<!--Navbar here. Used a container body to help keep things shapely-->
+<body class="container"> 
+    <!--made navbar red and rounded-->
+    <nav class="navbar navbar-expand-sm navbar-dark rounded" style="background-color: #d50a0a;">
+        <a class="navbar-brand" href="assignment3.html">NFL PREDICT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <!--links in my navbar below including a dropdown menu to view stats-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="assignment3.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="predictions.html">Predictions</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                Stats
+                    </a>
+                    <div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Passing</a>
+                        <a class="dropdown-item" href="#">Receiving</a>
+                        <a class="dropdown-item" href="#">Rushing</a>
+                        <a class="dropdown-item" href="#">Scoring</a>
+                    </div>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Here is my example of using grid to format my site. This displays game day and times for this weekend-->
+        <div class="container-fluid" id="grid">
+            <div class="row">
+                <div class="col-lg-6 text-light">
+                    AFC Championship Game: 2/28/24 3pm EST
+                </div>
+                <div class="col-lg-6 text-light">
+                    NFC Championship Game 2/28/24 6:30pm EST
+                </div>
+        
+            </div>
+        </div>
+        <!--Use of a table using bootstrap-->
+    <table class="table table-dark table-hover">
+        <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ravens</td>
+            <td>Baltimore</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>49ers</td>
+            <td>San Francisco</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Lions</td>
+            <td>Detroit</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Chiefs</td>
+            <td>Kansas City</td>
+        </tr>
+    </table>
+    
+
+    <img src="https://www.varietyinsight.com/images/honoree/Roger_Goodell.png" style="max-width: 60%;">
+
+    <!--Form to submit superbowl predictions uisng bootstrap. -->
+    <h4 class="text-light">Send us your predictions below!</h4>
+    <form class="text-light">
+        <!--used mb-3 to add spacing-->
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPrediction" class="form-label">Superbowl LVIII Winner</label>
+          <input type="password" class="form-control" id="exampleInputPrediction">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+<!--Script to source jquery and bootstrap-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+

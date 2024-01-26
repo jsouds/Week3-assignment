@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            background-color: rgb(1, 51, 105);
+        }
+        #grid{
+            border-style: solid;
+            border-color: black;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark rounded" style="background-color: #d50a0a;">
+        <a class="navbar-brand" href="assignment3.html">ABOUT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="assignment3.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="predictions.html">Predictions</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" 
+                        aria-haspopup="true" aria-expanded="false">
+                        Stats
+                    </a>
+                    <div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Passing</a>
+                        <a class="dropdown-item" href="#">Receiving</a>
+                        <a class="dropdown-item" href="#">Rushing</a>
+                        <a class="dropdown-item" href="#">Scoring</a>
+                    </div>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Most of my grid usage here. Nothing too complicated in order to keep it looking clean-->
+    <div class="container-fluid" id="grid">
+        <div class="row">
+            <div class="col-sm text-light">
+                #1 Fake NFL Prediction Site Worldwide
+            </div>
+            <div class="col-sm text-light">
+                Over 1 Billion Non-Existent Users
+            </div>
+            <div class="col-sm text-light">
+                <div class="row">
+                    <div class="col-sm text-light">
+                        100% False Accuracy
+                    </div>
+                    <div class="col-sm text-light">You Can (not) Trust Us!
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<img src="Shiny-Silver-Lombardi-Trophy.png" alt="">
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
